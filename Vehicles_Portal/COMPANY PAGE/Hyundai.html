@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8" />
+  <title>container Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/uikit.min.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="js/uikit.min.js"></script>
+  <script src="js/uikit-icons.min.js"></script>
+
+  <style media="screen">
+    body {
+      background-color: #000c00;
+    }
+
+    #imglg {
+      max-width: 100%;
+      max-height: 70%;
+    }
+
+    #auh1{
+      text-align: center;
+      color: white;
+    }
+
+    #aup{
+      text-align: center;
+      color: white;
+      font-size: 20px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="uk-offcanvas-content">
+    <div class="uk-position-relative">
+
+      <div class="uk-cover-container uk-height-max-large" uk-height-viewport="offset-bottom: 39">
+        <div class="uk-cover-container" id="home">
+          <canvas width="100" height="500"></canvas>
+          <img id="imglg" src="logo/hyundai logo.jpg" uk-cover>
+        </div>
+        </video>
+      </div>
+      <div class="uk-position-top ">
+        <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky uk-margin; cls-inactive: uk-navbar-transparent uk-light; top: 200; uk-margin">
+          <nav class="uk-navbar-container uk-navbar-transparent uk-animation-slide-top uk-margin" uk-navbar>
+            <div class="uk-navbar-left">
+              <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#" uk-toggle="target: #offcanvas-reveal; animation: uk-animation-fade"></a>
+              <a class="uk-navbar-item uk-logo" href="#">Logo</a>
+              <div id="offcanvas-reveal" uk-offcanvas="mode: reveal; overlay: true">
+                <div class="uk-offcanvas-bar uk-flex uk-flex-column" uk-navbar="dropbar: true; dropbar-mode: push">
+                  <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                    <li class="uk-active"><a href="#">Active</a></li>
+                    <li class="uk-parent">
+                      <a href="#">Parent</a>
+                      <ul class="uk-nav-sub">
+                        <li><a href="#">Sub item</a></li>
+                        <li><a href="#">Sub item</a></li>
+                      </ul>
+                    </li>
+                    <li class="uk-nav-header">Header</li>
+                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
+                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+
+    <!--  <div class="uk-child-width-1-2@s uk-light" uk-grid>
+
+    <div class="uk-background-contain uk-background-muted uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(logo/kawasaki-1.png);">
+            <p class="uk-h1">Contain</p>
+        </div>
+  </div> -->
+
+  <div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="ratio: 7:3; animation: push">
+
+      <ul class="uk-slideshow-items">
+          <li>
+              <img src="image/tucson.jpg" alt="" uk-cover>
+              <div class="uk-position-bottom uk-position-medium uk-text-center uk-light">
+                  <h3 class="uk-margin-remove">HYUNDAI TUCSON</h3>
+                  <p class="uk-margin-remove">Looks Great.Is Great.</p>
+              </div>
+          </li>
+          <li>
+              <img src="image/verna2.jpg" alt="" uk-cover>
+              <div class="uk-position-bottom uk-position-medium uk-text-center uk-light">
+                  <h3 class="uk-margin-remove">HYUNDAI VERNA</h3>
+                  <p class="uk-margin-remove">Intelligent by Design</p>
+              </div>
+          </li>
+          <li>
+              <img src="image/i20 2.jpg" alt="" uk-cover>
+              <div class="uk-position-bottom uk-position-medium uk-text-center uk-light">
+                  <h3 class="uk-margin-remove">HYUNDAI i20 ELITE</h3>
+                  <p class="uk-margin-remove">Un-Compromise</p>
+              </div>
+          </li>
+      </ul>
+
+      <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+      <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+  </div>
+
+
+
+
+  <!--<div class="uk-position-relative uk-visible-toggle" uk-slideshow="animation: push">
+
+      <ul class="uk-slideshow-items">
+          <li>
+              <img src="image/h22.jpg" alt="" uk-cover>
+              <div class="uk-position-center uk-position-small uk-text-center uk-light">
+                  <h2 class="uk-margin-remove">Center</h2>
+                  <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+          </li>
+          <li>
+              <img src="image/wpl3.jpg" alt="" uk-cover>
+              <div class="uk-position-bottom uk-position-medium uk-text-center uk-light">
+                  <h3 class="uk-margin-remove">Bottom</h3>
+                  <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+          </li>
+          <li>
+              <img src="image/wlp1.jpeg" alt="" uk-cover>
+              <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
+                  <h3 class="uk-margin-remove">Overlay Bottom</h3>
+                  <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+          </li>
+          <li>
+              <img src="image/h22.jpeg" alt="" uk-cover>
+              <div class="uk-overlay uk-overlay-default uk-position-bottom-right uk-position-small">
+                  <h3 class="uk-margin-remove">Overlay Bottom Right</h3>
+                  <p class="uk-margin-remove">Lorem ipsum dolor sit amet.</p>
+              </div>
+          </li>
+      </ul>
+
+      <div class="uk-light">
+          <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+          <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+      </div>
+
+  </div>-->
+
+
+
+
+
+
+      <br> <br>
+
+
+<div class="uk-section" style="background-color:#C0C0C0;">
+      <div class="uk-container uk-container-meadium">
+<div class="uk-container uk-container-small">
+        <div class="uk-child-width-1-2@m" uk-grid>
+          <div>
+            <div class="uk-card uk-card-default uk-card-hover uk-card-small">
+              <div class="uk-card-media-top">
+                <img src="image/i10.jpg" alt="">
+              </div>
+              <div class="uk-card-body">
+                <h3 class="uk-card-titee">HYUNDAI GRAND i10</h3>
+                <p>The Grand New Lingo</p>
+<p>On Road Price - RS 9,00,745</p>
+<p>Detailed Price</p>
+<p>Ex-Showroom - RS 7,48,154</p>
+<p>RTO - RS 1,16,265</p>
+<p>Insurance(Comprehensive) - RS 31,089</p>
+<p>Temporary Registration - RS 2,237</P>
+<p>Handling/Logistic Charges - RS 3000</p>
+<p>Competitors - TATA BOLT</p>
+              </div>
+              <div class="uk-card-footer">
+                <a href="#" class="uk-button uk-button-text uk-align-center">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-hover uk-card-small">
+              <div class="uk-card-body">
+                <h3 class="uk-card-title">HYUNDAI ELANTRA</h3>
+                <p>Prestige Redefined</p>
+<p>On Road Price - RS 24,28,450</p>
+<p>Detailed Price</p>
+<p>Ex-Showroom - RS 19,50,858</p>
+<p>RTO - RS 3,68,129</p>
+<p>Insurance(Comprehensive) - RS 84,717</p>
+<p>Temporary Registration - RS 2,237</P>
+<p>Tax Collected at Source(TCS) - RS 19,509</p>
+<p>Handling/Logistic Charges - RS 3000</p>
+<p>Competitors - TOYOTA COROLLA ALTIS</p>
+              </div>
+              <a href="#" class="uk-button uk-button-text uk-align-center">Read more</a>
+              <div class="uk-card-media-bottom">
+                <img src="image/elantra.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-hover uk-card-small">
+              <div class="uk-card-media-top">
+                <img src="image/eon.jpg" alt="">
+              </div>
+              <div class="uk-card-body">
+                <h3 class="uk-card-title">HYUNDAI EON</h3>
+                <p>New India's Trendsetter</p>
+<p>On Road Price - RS 5,49,914</p>
+<p>Detailed Price</p>
+<p>Ex-Showroom - RS 4,59,841</p>
+<p>RTO - RS 66,357</p>
+<p>Insurance(Comprehensive) - RS 18,479</p>
+<p>Temporary Registration - RS 2,237</P>
+<p>Tax Collected at Source(TCS) - RS 19,509</p>
+<p>Handling/Logistic Charges - RS 3000</p>
+              </div>
+              <div class="uk-card-footer">
+                <a href="#" class="uk-button uk-button-text uk-align-center">Read more</a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="uk-card uk-card-default uk-card-hover uk-card-small">
+              <div class="uk-card-body">
+                <h3 class="uk-card-title">HYUNDAI CRETA</h3>
+                <p>The Perfect SUV</p>
+<p>On Road Price - RS 18,25,947</p>
+<p>Detailed Price</p>
+<p>Ex-Showroom - RS 14,63,894</p>
+<p>RTO - RS 2,76,239</p>
+<p>Insurance(Comprehensive) - RS 65,938</p>
+<p>Temporary Registration - RS 2,237</P>
+<p>Tax Collected at Source(TCS) - RS 14,639</p>
+<p>Handling/Logistic Charges - RS 3000</p>
+<p>Competitors - TATA HSX</p>
+              </div>
+              <a href="#" class="uk-button uk-button-text uk-align-center">Read more</a>
+              <div class="uk-card-media-bottom">
+                <img src="image/creta2.jpg" alt="">
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+  </div>
+</div>
+
+<div class="uk-section" style="background-color:#000;">
+          <div>
+            <h1 id="auh1">HYUNDAI VISION</h1>
+            <p id="aup">To Create exceptional automotive value for our customers by harmoniously blending safety,quality and efficiency.</p>
+        </div>
+          </div>
+
+  <!--<div class="uk-section uk-section-secondary">
+  <div class="uk-container uk-container-expand uk-text-center">
+      <a href="#home" uk-totop uk-scroll><p>Back to Top</p></a>
+      </div>
+  </div>-->
+
+</body>
+
+</html>

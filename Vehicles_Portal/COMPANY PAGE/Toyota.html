@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8" />
+  <title>container Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/uikit.min.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="js/uikit.min.js"></script>
+  <script src="js/uikit-icons.min.js"></script>
+
+  <style media="screen">
+    body {
+      background-color: #000c00;
+    }
+
+    #imglg {
+      max-width: 100%;
+      max-height: 70%;
+    }
+
+    #auh1{
+      text-align: center;
+      color: white;
+    }
+
+    #aup{
+      text-align: center;
+      color: white;
+      font-size: 20px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="uk-offcanvas-content">
+    <div class="uk-position-relative">
+
+      <div class="uk-cover-container uk-height-max-large" uk-height-viewport="offset-bottom: 39">
+        <div class="uk-cover-container" id="home">
+          <canvas width="100" height="500"></canvas>
+          <img id="imglg" src="logo/Toyota.jpg" uk-cover>
+        </div>
+        </video>
+      </div>
+      <div class="uk-position-top ">
+        <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky uk-margin; cls-inactive: uk-navbar-transparent uk-light; top: 200; uk-margin">
+          <nav class="uk-navbar-container uk-navbar-transparent uk-animation-slide-top uk-margin" uk-navbar>
+            <div class="uk-navbar-left">
+              <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#" uk-toggle="target: #offcanvas-reveal; animation: uk-animation-fade"></a>
+              <a class="uk-navbar-item uk-logo" href="#">Logo</a>
+              <div id="offcanvas-reveal" uk-offcanvas="mode: reveal; overlay: true">
+                <div class="uk-offcanvas-bar uk-flex uk-flex-column" uk-navbar="dropbar: true; dropbar-mode: push">
+                  <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                    <li class="uk-active"><a href="#">Active</a></li>
+                    <li class="uk-parent">
+                      <a href="#">Parent</a>
+                      <ul class="uk-nav-sub">
+                        <li><a href="#">Sub item</a></li>
+                        <li><a href="#">Sub item</a></li>
+                      </ul>
+                    </li>
+                    <li class="uk-nav-header">Header</li>
+                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
+                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+
+    <!--  <div class="uk-child-width-1-2@s uk-light" uk-grid>
+
+    <div class="uk-background-contain uk-background-muted uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(logo/kawasaki-1.png);">
+            <p class="uk-h1">Contain</p>
+        </div>
+  </div> -->
+
+  <div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="ratio: 7:3; animation: push">
+
+      <ul class="uk-slideshow-items">
+          <li>
+              <img src="image/innova crysta.jpg" alt="" uk-cover>
+              <div class="uk-position-bottom uk-position-medium uk-text-center uk-light">
+                  <h3 class="uk-margin-remove">TOYOTA INNOVA CRYSTA</h3>
+                  <p class="uk-margin-remove">The Legend Reborn</p>
+              </div>
+          </li>
+          <li>
+              <img src="image/corolla altis.jpg" alt="" uk-cover>
+              <div class="uk-position-bottom uk-position-medium uk-text-center uk-light">
+                  <h3 class="uk-margin-remove">TOYOTA COROLLA ALTIS</h3>
+                  <p class="uk-margin-remove">The New Benchmark</p>
+              </div>
+          </li>
+          <li>
+              <img src="image/camry.jpg" alt="" uk-cover>
+              <div class="uk-position-bottom uk-position-medium uk-text-center uk-light">
+                  <h3 class="uk-margin-remove">TOYOTA CAMRY</h3>
+                  <p class="uk-margin-remove">Thoughtfully Advanced</p>
+              </div>
+          </li>
+      </ul>
+
+      <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+      <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+  </div>
+
+
+
+
+  <!--<div class="uk-position-relative uk-visible-toggle" uk-slideshow="animation: push">
+
+      <ul class="uk-slideshow-items">
+          <li>
+              <img src="image/h22.jpg" alt="" uk-cover>
+              <div class="uk-position-center uk-position-small uk-text-center uk-light">
+                  <h2 class="uk-margin-remove">Center</h2>
+                  <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+          </li>
+          <li>
+              <img src="image/wpl3.jpg" alt="" uk-cover>
+              <div class="uk-position-bottom uk-position-medium uk-text-center uk-light">
+                  <h3 class="uk-margin-remove">Bottom</h3>
+                  <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+          </li>
+          <li>
+              <img src="image/wlp1.jpeg" alt="" uk-cover>
+              <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
+                  <h3 class="uk-margin-remove">Overlay Bottom</h3>
+                  <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+          </li>
+          <li>
+              <img src="image/h22.jpeg" alt="" uk-cover>
+              <div class="uk-overlay uk-overlay-default uk-position-bottom-right uk-position-small">
+                  <h3 class="uk-margin-remove">Overlay Bottom Right</h3>
+                  <p class="uk-margin-remove">Lorem ipsum dolor sit amet.</p>
+              </div>
+          </li>
+      </ul>
+
+      <div class="uk-light">
+          <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+          <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+      </div>
+
+  </div>-->
+
+
+
+
+
+
+      <br> <br>
+
+
+<div class="uk-section" style="background-color:#C0C0C0;">
+      <div class="uk-container uk-container-meadium">
+<div class="uk-container uk-container-small">
+        <div class="uk-child-width-1-2@m" uk-grid>
+          <div>
+            <div class="uk-card uk-card-default uk-card-hover uk-card-small">
+              <div class="uk-card-media-top">
+                <img src="image/Etios cross.jpg" alt="">
+              </div>
+              <div class="uk-card-body">
+                <h3 class="uk-card-titee">TOYOTA ETIOS CROSS</h3>
+                <p>Born with Attitude</p>
+<p>On-Road Price - RS 10,17,001</p>
+<p>Ex-Showroom Price - RS 8,36,600</p>
+<p>RTO - RS 1,30,010</p>
+<p>Insurance - RS 43,39</p>
+<p>Registration Charges - RS 7,000</p>
+<p>Competitors - Hyundai i20 active</p>
+              </div>
+              <div class="uk-card-footer">
+                <a href="#" class="uk-button uk-button-text uk-align-center">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-hover uk-card-small">
+              <div class="uk-card-body">
+                <h3 class="uk-card-title">TOYOTA ETIOS LIVA</h3>
+                <p>Move in</p>
+<p>On-Road Price - RS 9,09,540</p>
+<p>Ex-Showroom Price - RS 7,56,400</p>
+<p>RTO - RS 1,22,545</p>
+<p>Insurance - RS 30,595</p>
+<p>Competitors - Hyundai i20 elite,TATA Indica</p>
+              </div>
+              <a href="#" class="uk-button uk-button-text uk-align-center">Read more</a>
+              <div class="uk-card-media-bottom">
+                <img src="image/Etios Liva.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-hover uk-card-small">
+              <div class="uk-card-media-top">
+                <img src="image/fortuner 2.jpg" alt="">
+              </div>
+              <div class="uk-card-body">
+                <h3 class="uk-card-title">TOYOTA FORTUNER</h3>
+                <p>The Art of Power</p>
+<p>On-Road Price - RS 38,09,719</p>
+<p>Ex-Showroom Price - RS 30,45,000</p>
+<p>RTO - RS 6,08,400</p>
+<p>Insurance - RS 1,15,869</p>
+              </div>
+              <div class="uk-card-footer">
+                <a href="#" class="uk-button uk-button-text uk-align-center">Read more</a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="uk-card uk-card-default uk-card-hover uk-card-small">
+              <div class="uk-card-body">
+                <h3 class="uk-card-title">TOYOTA COROLLA ALTIS</h3>
+                <p>The New Benchmark</p>
+<p>On-Road Price - RS 22,95,954</p>
+<p>Ex-Showroom Price - RS 18,40,000</p>
+<p>RTO - RS 3,59,208</p>
+<p>Insurance - RS 78,346</p>
+<p>Competitors - Hyundai Elantra,</p>
+              </div>
+              <a href="#" class="uk-button uk-button-text uk-align-center">Read more</a>
+              <div class="uk-card-media-bottom">
+                <img src="image/altis.jpg" alt="">
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+  </div>
+</div>
+
+<div class="uk-section" style="background-color:#000;">
+          <div>
+            <h1 id="auh1">TOYOTA VISION</h1>
+            <p id="aup">To be the most successful and respected car company in America</p>
+        </div>
+          </div>
+
+  <!--<div class="uk-section uk-section-secondary">
+  <div class="uk-container uk-container-expand uk-text-center">
+      <a href="#home" uk-totop uk-scroll><p>Back to Top</p></a>
+      </div>
+  </div>-->
+
+</body>
+
+</html>

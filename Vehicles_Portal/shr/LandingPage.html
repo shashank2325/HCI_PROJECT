@@ -1,0 +1,213 @@
+  ﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Landing Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+        <link rel="stylesheet" href="css/logo.css" />
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <style>
+      #ref{
+        text-decoration: none;
+      }
+    </style>
+</head>
+<body>
+    <div class="uk-offcanvas-content">
+        <div class="uk-position-relative">
+
+            <div class="uk-height-max-large" id="home" uk-height-viewport="offset-bottom: 10">
+
+                <video autoplay loop muted playsinline uk-cover>
+                    <source src="vid/intro2.mp4" type="video/mp4">
+                </video>
+
+            </div>
+            <div class="uk-cover-container uk-position-center">
+              <h1 style="color:SEAGREEN"> Enter Into The Portal</h1>
+              <a id="ref" href="HomePage.html">    <button type="button" class="uk-button uk-align-center" style="border-radius:10px; background-color:SEAGREEN; color:black; font-size:20px;">Continue To Home Page</button> </a>
+            </div>
+            <div class="uk-position-top ">
+                <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky uk-margin; cls-inactive: uk-navbar-transparent uk-light; top: 200; uk-margin" style="padding: 20px; ">
+                    <nav class="uk-navbar-container uk-navbar-transparent uk-animation-slide-top uk-margin" style="border-radius:30px;" uk-navbar>
+                        <div class="uk-navbar-left">
+                            <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#" uk-toggle="target: #offcanvas-reveal; animation: uk-animation-fade"></a>
+                            <a class="uk-navbar-item uk-logo" href="#"><div class="block gear" style="background: darkgrey;">
+</div></a>
+                            <div id="offcanvas-reveal" uk-offcanvas="mode: reveal; overlay: true">
+                                <div class="uk-offcanvas-bar uk-flex uk-flex-column"
+                                     uk-navbar="dropbar: true; dropbar-mode: push">
+                                    <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                                        <li class="uk-active"><a href="#">Home</a></li>
+                                        <li class="uk-parent">
+                                            <a href="#">Market</a>
+                                            <ul class="uk-nav-sub">
+                                                <li><a href="#">Spares</a></li>
+                                                <li><a href="#">Accessories</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="uk-nav-header ">Features</li>
+                                        <ul class="uk-nav-sub">
+                                        <li class="uk-text-large"><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table" ></span> Information</a></li>
+                                        <li class="uk-text-large"><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Comparison</a></li>
+</ul>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-navbar-center">
+                            <ul class="uk-nav uk-nav-default uk-navbar-nav" uk-scrollspy-nav="closest:li; cls:uk-active; scroll: true ; overflow:true;">
+                                <li><a class="uk-button-text" href="#home">Home</a></li>
+                                <li>
+                                    <a class="uk-button-text" href="#about">About Us</a>
+                                </li>
+                                <li><a class="uk-button-text" href="#service">Services</a></li>
+                                <li><a class="uk-button-text" href="#feature">Features</a></li>
+                                <li><a class="uk-button-text" href="#contact">Contact</a></li>
+
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div>
+        </div>
+        <div class="uk-section" style="background-color:rgba(0,0,0,0.9)" id="about">
+            <div class="uk-container uk-container-expand uk-text-center uk-padding">
+                <h1 class="uk-heading" uk-scrollspy="cls:uk-animation-fade; delay:50; "><span class="uk-text-background">About Us</span></h1>
+                <hr class="uk-divider-small   uk-padding" />
+                <span uk-icon="icon: info; ratio: 3"></span>
+                <p class="uk-container uk-container-small">
+                    <span style="font-size:22px">
+                        By the way, Welcome to the portal. Here we have enabled many functionalities that you can use seamlessly.You will come to know more about the website and the services we offer that can guide you in making the right decision. We have made a minimal design using simple web programming langauges to provide you maximum advantages over the information and features, present here.
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="uk-section uk-section-default"  id="service">
+            <div class="uk-container uk-container-expand uk-text-center uk-padding-large">
+                <h1 class="uk-heading" uk-scrollspy="cls:uk-animation-fade; delay:50;"><span class="uk-text-background">Services</span></h1>
+                <hr class="uk-divider-small" />
+                <p class="uk-text-lead" uk-scrollspy="cls:uk-animation-fade; delay:100;">These are the primary services that will surely make your mind to use this website more often</p>
+                <div class="uk-child-width-1-3@s uk-grid-match" uk-scrollspy="target: >div; cls:uk-animation-slide-bottom; delay:50;" uk-grid>
+                    <div class="uk-transition-toggle">
+                        <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                            <span class="uk-transition-scale-up uk-transition-opaque" id="inf" uk-icon="icon: info; ratio: 4"></span>
+                            <h3 class="uk-card-title">Informative</h3>
+                            <p style="font-size:18px">
+                               Latest to Upcoming, Trending to Leaks. We are here to fill you knowledge with more and more of automobile stuff and get notified on the topics you subscribe for.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="uk-transition-toggle">
+                        <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                            <span class="uk-transition-scale-up uk-transition-opaque" uk-icon="icon:cart; ratio: 4"></span>
+                            <h3 class="uk-card-title">MarketPlace</h3>
+                            <p style="font-size:18px">Variety of Accessories, Interior and Exteriors and more.... This means, you can buy them by authenticating yourself and add them to your cart. We surely protect you personal details.</p>
+                        </div>
+                    </div>
+                    <div class="uk-transition-toggle">
+                        <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                            <span class="uk-transition-scale-up uk-transition-opaque" uk-icon="icon: thumbnails; ratio: 4"></span>
+                            <h3 class="uk-card-title">Comparison</h3>
+                            <p style="font-size:18px">Stuck on what to choose? No worries, with the comparison service we provide, you can validate the requirements you prefer side-by-side and finalize the automobile that suites your needs/</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-section" style="background-color:rgba(30,144,255,0.9)">
+            <div class="uk-container uk-container-expand uk-text-center uk-padding-large" >
+                <h1 class="uk-heading" uk-scrollspy="cls:uk-animation-fade; delay:100;" id="feature"><span>Features</span></h1>
+                <hr class="uk-divider-small" />
+                <p class="uk-text-lead"  uk-scrollspy="cls:uk-animation-fade; delay:100;">Features are supposed to help the services and the following are what these will do.</p>
+                <div class="uk-child-width-1-3@s uk-grid-match" uk-scrollspy="target: > div > .uk-card; cls:uk-animation-slide-bottom; delay:50;" uk-grid>
+                    <div class="uk-transition-toggle">
+                        <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                            <span class="uk-transition-scale-up uk-transition-opaque" id="inf" uk-icon="icon: lock; ratio: 4"></span>
+                            <h3 class="uk-card-title">Secure</h3>
+                            <p style="font-size:18px">
+                                Using the most reliable encryptions, We protect your Account information.
+                                Dont worry until and unless you agree upon, We will not share the information.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="uk-transition-toggle">
+                        <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                            <span class="uk-transition-scale-up uk-transition-opaque" uk-icon="icon: check; ratio: 4"></span>
+                            <h3 class="uk-card-title">Reliable</h3>
+                            <p style="font-size:18px">With the latest updates on the current and upcoming automobiles, you can gain more information and also can subscribe to the email notifications. ~ Finally no fake information.</p>
+                        </div>
+                    </div>
+                    <div class="uk-transition-toggle">
+                        <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                            <span class="uk-transition-scale-up uk-transition-opaque" uk-icon="icon: location; ratio: 4"></span>
+                            <h3 class="uk-card-title">Locate</h3>
+                            <p style="font-size:18px">Ever stuck up at a place you dont know while finding out a dealer? Not anymore. We will locate the dealers for your search with the help of maps and connect you with them.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-section" style="background-color:rgba(0,0,0,0.9)" id="contact">
+            <div class="uk-container uk-container-expand uk-padding">
+                <h1 class="uk-heading uk-text-center" uk-scrollspy="cls:uk-animation-fade; delay:50; "><span class="uk-text-background">Contact Us</span></h1>
+                <hr class="uk-divider-small uk-text-center" />
+                <div class="uk-container uk-container-expand uk-child-width-1-2 uk-text-center uk-grid-divider uk-child-width-expand@s" uk-grid>
+                    <form class="uk-grid-medium uk-padding-large uk-grid-match" uk-grid>
+                        <h2 class="uk-text-background  uk-align-center">Send us a message</h2>
+                        <div class="uk-width-1-1@s">
+                           <p>We are here answer any questions you may have about our portal experiences. Reach out to us and we'll answer as soon as we can</p>
+                        </div>
+                        <div class="uk-width-1-1@s">
+                            <input class="uk-input" type="text" placeholder="Name" style="border-radius:30px;">
+                        </div>
+                        <div class="uk-width-1-2@s">
+                            <input class="uk-input" type="text" placeholder="Email" style="border-radius:30px;">
+                        </div>
+                        <div class="uk-width-1-2@s">
+                            <input class="uk-input" type="text" placeholder="Subject" style="border-radius:30px;">
+                        </div>
+                        <div class="uk-width-1-1@s">
+                            <textarea class="uk-textarea" rows="5" placeholder="Message" style="border-radius:30px;"></textarea>
+                        </div>
+                        <div class="uk-width-1-1">
+                        <button class="uk-button uk-button-primary uk-align-center uk-width-1-3" style="border-radius:30px;">Submit</button>
+                        </div>
+                    </form>
+                    <div class="uk-grid-large uk-grid-tem-match" uk-grid>
+                                <div class="uk-container uk-align-center">
+                                <ul class="uk-list">
+                                    <li><h3 class="uk-text-background uk-align-center">Contact Information</h3></li>
+                                    <br><br>
+                                    <li><h4 class="uk-text-background uk-align-center">Email</h4></li>
+                                        <li>example@mail.com</li>
+                                        <br><br>
+                                    <li><h4 class="uk-text-background uk-align-center">Phone</h4></li>
+                                    <li>+91 1234567890</li>
+                                    <br>
+                                    <br>
+                                    <li><a href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
+                                        <a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
+                                        <a href="" class="uk-icon-button" uk-icon="google-plus"></a></li>
+                                    </ul>
+                                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-section uk-section-secondary">
+        <div class="uk-container uk-container-expand uk-text-center">
+            <a href="#home" uk-totop uk-scroll><p>Back to Top</p></a>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
